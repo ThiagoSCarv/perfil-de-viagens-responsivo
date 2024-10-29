@@ -1,0 +1,58 @@
+.about {
+    gap: 2rem;
+}
+.main { 
+    & img {
+        max-width: 7.5rem;
+        max-height: 7.5rem;
+        object-fit: cover;
+    }
+    & div {
+        margin-top: 1rem;
+        & h1 {
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+.info {
+    & ul {
+        & li {
+            padding-left: 2rem;
+            color: var(--text-color-secondary);
+            padding-bottom: 1rem;
+            font: var(--paragraph-md);
+        }
+        & li:nth-child(1) {
+            background: url(../assets/icons/MapPin.svg) no-repeat;
+        }
+        & li:nth-child(2) {
+            background: url(../assets/icons/AirplaneTilt.svg) no-repeat;
+        }
+        & li:nth-child(3) {
+            background: url(../assets/icons/Image.svg) no-repeat;
+        }
+    }
+}
+
+@media (width >= 80em) {
+    .about {
+        max-width: 100%;
+    }
+    .main {
+        display: flex;
+        gap: 2rem;
+        & img {
+            max-width: 11rem;
+            max-height: 11rem;
+            object-fit: cover;
+        }
+    }
+    .info {
+        margin-left: auto;
+        align-self: center;
+        & ul {
+            width: 17.5rem;
+        }
+    }
+}

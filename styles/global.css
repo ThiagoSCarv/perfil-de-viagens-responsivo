@@ -23,6 +23,14 @@
     --py-lg: 2rem;
 }
 
+body {
+    background-color: var(--background-color);
+}
+
+#header-about {
+    background-color: var(--skeleton-color);
+}
+
 html {
     font: var(--paragraph-md);
     color: var(--text-color-secondary);
@@ -36,11 +44,6 @@ nav {
             stroke: var(--brand-color);
         }
     }
-}
-
-img {
-    max-width: 100%;
-    display: inline-block;
 }
 
 ul[role='list'] {
