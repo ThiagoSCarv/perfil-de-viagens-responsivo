@@ -1,0 +1,22 @@
+footer {
+    & span {
+        margin-inline: auto;
+    }
+    & div {
+        margin-inline: auto;
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+@media (width >= 80em) {
+    footer {
+        & span {
+            margin-inline: initial;
+        }
+        & div {
+            margin-inline: 0;
+            margin-left: auto;
+        }
+    }
+}
